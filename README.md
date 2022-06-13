@@ -12,22 +12,62 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
 
-## Gebruik
 
-## Bronnen
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Gebruik](#gebruik)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
-## Licentie
+<!-- ## Beschrijving -->
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
-This work is licensed under [GNU GPLv3](./LICENSE).
+
+## 👉 Kenmerken
+
+### 💻 Client-Side
+  * 🧭 HTML
+  * 🏦 CSS
+  * 🏥 JavaScript
+  
+### 💾 Server-Side
+ * [🏛️ Node.js](https://nodejs.dev/)
+ * [🚣 Express](https://www.npmjs.com/package/express)
+ 
+
+### ‼️ Dependencies
+ * [🧦 Socket.io](https://www.npmjs.com/package/socket.io)
+ * [🐰 Nodemon](https://www.npmjs.com/package/nodemon)
+ * [🏡 Ejs](https://www.npmjs.com/package/ejs)
+ * [📱 Body-Parser](https://www.npmjs.com/package/body-parser)
+ * [🛏️ Path](https://www.npmjs.com/package/path)
+ * [📹 Compression](https://www.npmjs.com/package/compression)
+ * [🖥️ Cssnano](https://www.npmjs.com/package/cssnano)
+ * [💤 Postcss](https://www.npmjs.com/package/postcss)
+
+
+## 🪢 Installatie & Gebruik
+```
+# Cloning the repository
+git clone https://github.com/M4TThys123/SPRINT-11-Realtime-Web-App.git
+
+# Moving to the folder
+cd proof-of-concept
+
+# Install NPM Dependencies
+npm install
+
+# Install NPM packages
+npm run start
+```
+
+
+## 🌐 Bronnen
+*
+
+## 🔒 Licentie
+
+
