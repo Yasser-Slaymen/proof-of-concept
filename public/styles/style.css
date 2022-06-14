@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Open-sans";
+    font-weight: normal;
+    src: url('/assets/fonts/OpenSans-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: "Open-sans";
+    font-weight: bold;
+    src: url('/assets/fonts/OpenSans-Bold.ttf');
+  }
+  a{
+      color: var(--blueberry);
+  }
+
+  :root {
+    --white: #ffffff;
+    --blueberry: #050542;
+    --turquoise: #66e5bf;
+    --lavender: #a675f5;
+    --lavender-dark: hsl(263, 86%, 60%);
+    --attention: #050542;
+    --attention-background: #05054233;
+    --call-to-action: #fffc86;
+    --rounded: 0.5rem;
+    --pilled: 2rem;
+    --shadow: 0.3rem;
+  }
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size:"Open-sans", sans-serif;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color:var(--blueberry);
+    max-width: 1400px;
+    margin: auto;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* heder */
+/* logo HvA */
+
+body>header>section{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 1em; 
+}
+
+.logo {
+    width: 200px;
+    height: 150px;
+    margin: 0 1.8em;
+    
+  }
+
+.fdnd{
+    border-left: 1px solid var(--white);
+    padding-left: 1em;
+    font-family: "Open-sans",sans-serif;
+}
