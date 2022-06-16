@@ -124,7 +124,7 @@ main{
 .contianer{
     display: flex;
     justify-content:center;
-    width: 50vw;
+    width: 45vw;
     border-radius: 1em;
     color: var(--blue);
     background-color: var(--green);
@@ -146,6 +146,16 @@ img{
     border-radius: 1em;
 }
 /* Aside */
+#aside{
+    display: grid;
+    place-items: center;
+    width: 25vw;
+    border-radius: 1em;
+    background-color: var(--green);
+}
+#aside h4{
+    color: var(--blue);
+}
 
 .aside-container{
     display: flex;
@@ -154,12 +164,13 @@ img{
     align-items: center;
     row-gap: 1em;
     padding-top: 2em;
-    width: 20vw;
+    width: 21vw;
+    height: 72vh;
     border-radius: 1em;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: var(--green);
-
+    /* background-color: var(--blue); */
 }
 .aside-content{
     width: 17vw;
@@ -191,7 +202,9 @@ h6{
 /* Footer */
 footer{
     display: flex;
+    flex-direction:column ;
     justify-content: center;
+    align-items: center;
     max-width: 80vw;
     margin-top: 2em;
     color: var(--purple);
