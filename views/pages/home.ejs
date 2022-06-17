@@ -29,6 +29,7 @@
         <section class="aside-container">
            >
             <% smartzones.forEach((smartzone) => {%> 
+<<<<<<< HEAD
 
                     <article class="aside-content" >
                         <a href="/article?id=${<%- smartzone.smartzoneId %>}">blog</a>
@@ -44,8 +45,19 @@
                                 </p>
                        
                      
+=======
+                <a href="/article?id={%- smartzone.id %}">
+                    <article class="aside-content" >
+                        <!-- <a class="aside-link" href=""> </a> -->    
+                        <h6><%- smartzone.name %></h6>
+                        <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
+                        <p class="aside-parph">
+                            <%- smartzone.description %>  
+                        </p>
+>>>>>>> 67bcbc2ad4e3a7f7e048480a22e5d6f62b5869d8
                     </article>
-            <%}) %>
+                </a>
+            <% }) %>
 
             <!-- <article class="aside-content" >
                 <a class="aside-link" href="">
