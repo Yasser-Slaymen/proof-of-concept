@@ -16,6 +16,8 @@ app.set('views','./views')
 // Routes
 const homeRoute = require('./routes/home')
 const addRoute = require('./routes/add')
+const articleRoute = require('./routes/article')
 
 app.use('/',homeRoute)
 app.use('/',addRoute)
+app.use('/',articleRoute)
