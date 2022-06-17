@@ -7,7 +7,7 @@ const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
 
 router.post('/add', urlencodedParser,(request,response) => {
     const postData = {
-        methode:'POST',
+        method:'POST',
         body:JSON.stringify(request.body),
         headers:  {'Content-Type': 'application/json'}
     }
