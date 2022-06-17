@@ -3,7 +3,8 @@
     <section class="contianer">
         <article>
             
-                <span class="names">Clive Crabb</span>
+                <span class="names">Clive </span>
+                
                 <h3>How I Overcame My Fear of the Ocean</h3>
                 <img src="../images/ocean.jpg" alt="ocean">
                 <p class="content">
@@ -19,84 +20,49 @@
             
         </article>
     </section>
+
+    <!-- Aside -->
+
     <section id="aside">
         <h4>More From FDND</h4>
-
-
+       
         <section class="aside-container">
+           >
+            <% smartzones.forEach((smartzone) => {%> 
                     <article class="aside-content" >
-                            <a class="aside-link" href="">
-                                <h6>How I Overcame lMy Fear of the Ocean</h6>
-                                <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    
+                     
+                        <!-- <a class="aside-link" href=""> </a> -->
+                            
+                                <h6><%- smartzone.name %></h6>
+                                <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
+                                <p class="aside-parph">
+                                 <%- smartzone.description %>  
                                 </p>
-                            </a>
+                       
+                     
                     </article>
+            <%}) %>
 
-                    <article class="aside-content" >
-                        <a class="aside-link" href="">
-                            <h6>How I Overcame lMy Fear of the Ocean</h6>
-                            <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                
-                            </p>
-                        </a>
-                </article>
-
-                <article class="aside-content" >
-                    <a class="aside-link" href="">
-                        <h6>How I Overcame lMy Fear of the Ocean</h6>
-                        <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            
-                        </p>
-                    </a>
-                </article>
+            <!-- <article class="aside-content" >
+                <a class="aside-link" href="">
+                    <h6>How I Overcame lMy Fear of the Ocean</h6>
+                    <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        
+                    </p>
+                </a>
+            </article> -->
 
                 
-                <article class="aside-content" >
-                    <a class="aside-link" href="">
-                        <h6>How I Overcame lMy Fear of the Ocean</h6>
-                        <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            
-                        </p>
-                    </a>
-                </article>
-                
-                <article class="aside-content" >
-                    <a class="aside-link" href="">
-                        <h6>How I Overcame lMy Fear of the Ocean</h6>
-                        <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            
-                        </p>
-                    </a>
-                </article>
-
-                
-                <article class="aside-content" >
-                    <a class="aside-link" href="">
-                        <h6>How I Overcame lMy Fear of the Ocean</h6>
-                        <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            
-                        </p>
-                    </a>
-                </article>
-
-
         </section>
+       
        
     </section>
    
 
 </main>
 <%- include('../includes/foot.ejs') %> 
+
+
+ 

@@ -22,6 +22,7 @@
     --rounded: 0.5rem;
     --pilled: 2rem;
     --shadow: 0.3rem;
+    --radius:1em
 }
 *{
     box-sizing: border-box;
@@ -167,7 +168,7 @@ img{
     width: 21vw;
     height: 72vh;
     border-radius: 1em;
-    overflow-y: scroll;
+    overflow-y:scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
     /* background-color: var(--blue); */
@@ -191,13 +192,25 @@ img{
 h6{
     color: var(--green);
 }
-.aside-link > p{
+.aside-parph{
+    max-width:15em ;
+    height: 2.5em;
     font-size: .8em;
-    color: var(--green);
+    overflow: hidden;
+    color:var(--green);
     
 }
 
+/* POST Page */
 
+#form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    border-radius: var(--radius);
+    background-color: var(--green);
+}
 
 /* Footer */
 footer{

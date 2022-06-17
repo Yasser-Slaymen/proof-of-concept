@@ -5,13 +5,13 @@ const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
 
 router.get('/', (request, response) => {
    fetchJson(BasUrl).then((JsonData) =>{
+            //   console.log(JsonData)
       response.render('pages/home',{
-         title:'smartzones',
-         smartzones: JsonData.data
+         title:'More From FDND',
+         smartzones: JsonData.data,
       })
 
    })
-   // response.render('pages/home.ejs')
 })
 async function fetchJson(url, postData = {}) {
    return await fetch(url, postData)

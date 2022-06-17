@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const bodyparser = require('body-parser')
+const bodyParser = require('body-parser')
 const urlencodedParser = bodyParser.urlencoded({extended:false})
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
@@ -25,9 +25,9 @@ router.get('/add',(request,response) =>{
 })
 
 async function fetchJson(url, postData = {}){
-    return await fetchJson(url, postData)
+    return await fetch(url, postData)
     .then((response) => response.json())
-    .catch((error) =>error)
+    .catch((error) => error)
 
 }
 
