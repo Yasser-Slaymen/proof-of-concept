@@ -5,7 +5,7 @@ const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
 
 router.get('/', (request, response) => {
    fetchJson(BasUrl).then((JsonData) =>{
-            //   console.log(JsonData)
+              console.log(JsonData)
       response.render('pages/home',{
          title:'More From FDND',
          smartzones: JsonData.data,
