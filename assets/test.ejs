@@ -1,0 +1,30 @@
+<section class="contianer">
+    
+    <article>
+        <span class="names" style="color: red;"><%- data.name %>  </span>
+        <h3 style="color:red ;"><%- data.town %> </h3>
+        <img src="<%-data.image %> " alt="ocean">
+        <p class="content"> <%- data.description %> </p>
+    </article>
+</section>
+
+
+ <!-- Aside -->
+
+ <section id="aside">
+    <h4>More From FDND</h4>
+    <section class="aside-container">
+        <% smartzones.forEach((smartzone) => {%> 
+                <article class="aside-content" >
+                    <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
+                            <h6><%- smartzone.name %></h6>
+                            <p style="color: red;"><%- smartzone.smartzoneId %></p>
+                            <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
+                            <p class="aside-parph">
+                             <%- smartzone.description %>  
+                            </p>
+
+                </article>
+        <% }) %>
+    </section>
+</section>

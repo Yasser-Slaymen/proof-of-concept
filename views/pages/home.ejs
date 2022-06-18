@@ -1,9 +1,15 @@
 <%- include('../includes/head.ejs') %> 
 <main id="main-container">
+    
     <section class="contianer">
+       
         <article>
+            <% smartzones.forEach((smartzone) => { %>
+                <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
+            <% }) %>
+            <!-- <% smartzones.forEach((smartzone) => {%> <h6 style="color: red;"><%- smartzone.name %></h6>  <%})%> -->
             
-                <span class="names">Clive </span>
+                <span class="names"><h1> <%- smartzones.smartzoneId %></h1>  Crlaale</span>
                 
                 <h3>How I Overcame My Fear of the Ocean</h3>
                 <img src="../images/ocean.jpg" alt="ocean">
@@ -19,6 +25,7 @@
                 </p>
             
         </article>
+       
     </section>
 
     <!-- Aside -->
@@ -32,7 +39,9 @@
 
 
                     <article class="aside-content" >
-                        <a href="/article?id=${<%- smartzone.smartzoneId %>}">blog</a>
+                        <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
+                        <!-- <a href="/article?id={- smartzone.Id %}">Article</a> -->
+                        <!-- <a href="/article?id=${<%- smartzone.smartzoneId %>}">blog</a> -->
                             
                                 <h6><%- smartzone.name %></h6>
                                 <p style="color: red;"><%- smartzone.smartzoneId %></p>
@@ -60,11 +69,10 @@
             <!-- <a href="/article?id={%- smartzone.id %}">
                 <article class="aside-content" >
                      <a class="aside-link" href=""> </a>    
-                    <h6><%- smartzone.name %></h6>
-                    <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
+                    
+                    
                     <p class="aside-parph">
-                        <%- smartzone.description %>  
-                    </p>
+                    
 
                 </article>
             </a> -->
