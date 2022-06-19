@@ -41,6 +41,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
 
 /* heder */
 /* logo HvA */
@@ -125,24 +128,37 @@ main{
 /* article contianet */
 .contianer{
     display: flex;
-    justify-content:center;
+    /* flex-direction: column; */
+    justify-items:center;
+    align-items: center;
     width: 45vw;
     border-radius: 1em;
     color: var(--blue);
     background-color: var(--green);
 }
 .contianer article{
-    width: 47vw;
+    width: 45vw;
     padding: 2em;
 }
 
 /* Articl content  */
-article >p{
-    max-width: 28em;
+.published-date{
+    font-size: small;
 }
+.paragraph-content{
+    width: 31em;
+    max-height: 32vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.paragraph-content::-webkit-scrollbar {
+    background:transparent;
+    width: .1em;
+    
+  }
 
 img{
-    width: 30vw;
+   width: 37vw;
     height: 25vh;
     margin: .5em 0 .5em 0;
     border-radius: 1em;
@@ -175,9 +191,13 @@ img{
     /* background-color: var(--blue); */
 }
 .aside-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 17vw;
     height: 20vh;
-    padding: .5em;
+    padding: .7em;
     border-radius: .3em;
     background-color: var(--blue);
     color:var(--green);
@@ -187,8 +207,9 @@ img{
     text-decoration: none;
 }
 .aside-imge{
-    width: 16vw;
-    height: 8vh;
+    width: 9vw;
+    height: 10vh;
+    border-radius: 0;
 }
 h6{
     color: var(--green);

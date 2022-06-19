@@ -2,29 +2,19 @@
 <main id="main-container">
     
     <section class="contianer">
+        <% smartzones.filter((smartzone) => smartzone.name === 'Manoukk').map(smartzone =>{%>
        
         <article>
-            <% smartzones.forEach((smartzone) => { %>
-                <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
-            <% }) %>
-            <!-- <% smartzones.forEach((smartzone) => {%> <h6 style="color: red;"><%- smartzone.name %></h6>  <%})%> -->
-            
-                <span class="names"><h1> <%- smartzones.smartzoneId %></h1>  Crlaale</span>
-                
-                <h3>How I Overcame My Fear of the Ocean</h3>
-                <img src="../images/ocean.jpg" alt="ocean">
-                <p class="content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam, beatae,
-                    in magnam maxime. Eius, iste ea! Est non dicta sit deserunt ipsa?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod cupiditate 
-                    assumenda voluptatibus provident hic tenetur laborum accusamus,
-                     blanditiis fugit alias Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                     Architecto dolorum cum quod totam doloribus maiores quo libero 
-                     delectus recusandae doloremque.
-                </p>
+                      
+                <h4 class="author"><%- smartzone.name %> </h4>
+                <span class="published-date">Jun15 </span>
+                <h2><%- smartzone.town %> </h2>
+                <img src="<%- smartzone.image %> " alt="ocean">
+                <p class="paragraph-content"> <%- smartzone.description %> </p>
             
         </article>
+
+        <%})%> 
        
     </section>
 
@@ -32,39 +22,22 @@
 
     <section id="aside">
         <h4>More From FDND</h4>
-       
         <section class="aside-container">
-           >
+           
             <% smartzones.forEach((smartzone) => {%> 
-
-
+                <a href="/article/<%- smartzone.smartzoneId %>">
                     <article class="aside-content" >
-                        <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
-                        <!-- <a href="/article?id={- smartzone.Id %}">Article</a> -->
-                        <!-- <a href="/article?id=${<%- smartzone.smartzoneId %>}">blog</a> -->
-                            
                                 <h6><%- smartzone.name %></h6>
-                                <p style="color: red;"><%- smartzone.smartzoneId %></p>
                                 <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
                                 <p class="aside-parph">
                                  <%- smartzone.description %>  
                                 </p>
                     </article>
-                     
 
+                </a>
                 
             <% }) %>
 
-            <!-- <article class="aside-content" >
-                <a class="aside-link" href="">
-                    <h6>How I Overcame lMy Fear of the Ocean</h6>
-                    <img class="aside-imge" src="../images/ocean.jpg" alt="ocean">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        
-                    </p>
-                </a>
-            </article> -->
            
             <!-- <a href="/article?id={%- smartzone.id %}">
                 <article class="aside-content" >
