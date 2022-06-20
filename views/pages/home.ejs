@@ -1,60 +1,66 @@
 <%- include('../includes/head.ejs') %> 
 <main id="main-container">
+    <!-- <nav class="menu">
+        <ul>
+           <li><a href="#over-fdnd">Over FDND</a></li>
+           <li><a href="#vragenlijst">Vragenlijst</a></li>
+           <li><a href="#code-challenges">challenges</a></li>
+           <li><a href="#intake-gesprek">gesprek</a></li>
+           <li><a href="#studenten-werk">studenten</a></li>
+        </ul>
+
+    </nav> -->
     
-    <section class="contianer">
-        <% smartzones.filter((smartzone) => smartzone.name === 'Manoukk').map(smartzone =>{%>
-       
-        <article>
-                      
-                <h4 class="author"><%- smartzone.name %> </h4>
-                <span class="published-date">Jun15 </span>
-                <h2><%- smartzone.town %> </h2>
-                <img src="<%- smartzone.image %> " alt="ocean">
-                <p class="paragraph-content"> <%- smartzone.description %> </p>
-            
-        </article>
-
-        <%})%> 
-       
-    </section>
-
-    <!-- Aside -->
-
-    <section id="aside">
-        <h4>More From FDND</h4>
-        <section class="aside-container">
-           
-            <% smartzones.forEach((smartzone) => {%> 
-                <a href="/article/<%- smartzone.smartzoneId %>">
-                    <article class="aside-content" >
-                                <h6><%- smartzone.name %></h6>
-                                <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
-                                <p class="aside-parph">
-                                 <%- smartzone.description %>  
-                                </p>
-                    </article>
-
-                </a>
+    
+        <section class="contianer">
+            <% smartzones.filter((smartzone) => smartzone.name === 'Manoukk').map(smartzone =>{%>
+        
+            <article>
+                        
+                    <h4 class="author"><%- smartzone.name %> </h4>
+                    <span class="published-date">Jun15 </span>
+                    <h2><%- smartzone.town %> </h2>
+                    <img src="<%- smartzone.image %> " alt="ocean">
+                    <p class="paragraph-content"> <%- smartzone.description %> </p>
                 
-            <% }) %>
+            </article>
 
-           
-            <!-- <a href="/article?id={%- smartzone.id %}">
-                <article class="aside-content" >
-                     <a class="aside-link" href=""> </a>    
-                    
-                    
-                    <p class="aside-parph">
-                    
-
-                </article>
-            </a> -->
-
-                
+            <%})%> 
+        
         </section>
-       
-       
-    </section>
+
+        <!-- Aside -->
+
+        <section id="aside">
+            <h4>More From FDND</h4>
+            <section class="aside-container">
+            
+                <% smartzones.forEach((smartzone) => {%> 
+                    <a href="/article/<%- smartzone.smartzoneId %>">
+                        <article class="aside-content" >
+                                    <h6><%- smartzone.name %></h6>
+                                    <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
+                                    <p class="aside-parph">
+                                    <%- smartzone.description %>  
+                                    </p>
+                        </article>
+                    </a>
+                <% }) %>
+
+            
+                <!-- <a href="/article?id={%- smartzone.id %}">
+                    <article class="aside-content" >
+                        <a class="aside-link" href=""> </a>    
+                        <p class="aside-parph">
+                    </article>
+                </a> -->
+
+                    
+            </section>
+        
+        
+        </section>
+    
    
 
 </main>

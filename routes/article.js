@@ -8,6 +8,8 @@ router.get('/article/:smartzoneId', (request, response) => {
       response.render('pages/article', {
         title: 'Voorbeeld titel',
         data: jsonData.data[0],
+
+
       })
     })
   })

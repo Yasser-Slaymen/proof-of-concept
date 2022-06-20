@@ -1,0 +1,25 @@
+.article-contianer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 80vw;
+    border-radius: 1em;
+    color: var(--blue);
+    background-color: var(--green);
+}
+
+.publish-image{
+    width: 50vw;
+}
+
+.publish-paragraph{
+    width:50vw;
+    height:25vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.publish-paragraph::-webkit-scrollbar {
+    background:transparent;
+    width: .1em;
+    
+  }
