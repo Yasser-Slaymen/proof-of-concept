@@ -63,8 +63,9 @@ header h1{
   font-size:2em;
 }
 .head__container{
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   row-gap: 2em;
   max-width: 80vw;
@@ -72,6 +73,13 @@ header h1{
   border-radius: 1em;
   margin: 0;
   background-color:var(--purple) ;
+}
+h1{
+  margin-top: 1em;
+  text-align: center;
+}
+.head__container>p{
+    margin: 1em;
 }
 .serch_articl{
     display: flex;
@@ -104,61 +112,54 @@ header h1{
 .btn-search:hover{
     color: var(--green);
 }
+select{
+    width: 16vw;
+    height: 6vh;
+    padding: .3em;
+    font-size: 1em;
+    border-radius: .7em;
+    background-color: var(--blue);
+    color: var(--white);
+}
 
-/* main home */
 
+/* Menu button */
+
+.btn-writing{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 0.4em 1.5em;
+    margin: 1em;
+    background-color:var(--blue);
+    border-radius:var(--pilled);
+    font-size: 1.4rem; 
+    transition: .3s transform;
+    transform-origin: bottom left;
+}
+.btn-writing{
+    text-decoration: none;
+    color:var(--white);
+} 
+
+.btn-writing:hover{
+    color: var(--blue);
+    font-size: 1.3rem;
+    background-color:var(--white);
+    cursor: pointer;
+} 
+/* Main */
 main{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     gap: 1.5em;
     max-width: 80vw;
     height: 80vh;
-
-
 }
-/* Menu button */
-
-/* .menu>ul>li{
-    padding: 0.5em 2em;
-    margin-top: 0;
-    background-color:var(--green);
-    border-radius:var(--pilled);
-    font-size: 1.5rem; 
-    transition: .3s transform;
-    transform-origin: bottom left;
-
-}
-nav>ul>li>a{
-    text-decoration: none;
-    color:var(--blue);
-} */
-
- /* .menu>ul{
-    display: flex;
-    justify-content:space-between;
-    padding:1.5em;
-    align-items: center;
-
-    list-style:none ;
-}
-.menu>ul>li:nth-child(2){
-    background-color: var(--turquoise);
-}
-.menu>ul>li:nth-child(4){
-    background-color: var(--turquoise);
-}
-
-.menu>ul>li:hover{
-    background-color:var(--white);
-    transform:rotate(9deg);
-    cursor: pointer;
-}  */
 
 /* article contianet */
 .contianer{
     display: flex;
-    /* flex-direction: column; */
     justify-items:center;
     align-items: center;
     width: 45vw;
