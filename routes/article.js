@@ -12,9 +12,16 @@ router.get('/article/:smartzoneId', (request, response) => {
 
       })
     })
+
+    // fetchJson(BasUrl).then((JsonData) =>{
+    //   //   console.log(JsonData)
+    //  response.render('pages/article',{
+    //  title:'More From FDND',
+    // smartzones: JsonData.data,
+    // })})
   })
 
-
+  
 async function fetchJson(url, postData = {}) {
    return await fetch(url, postData)
    .then((response) => response.json())
@@ -23,13 +30,3 @@ async function fetchJson(url, postData = {}) {
 
 module.exports = router
 
-// router.get('/article', (request, response) => {
-//     fetchJson(BasUrl).then((JsonData) =>{
-//                console.log(JsonData)
-//        response.render('pages/article',{
-//           title:'More From FDND',
-//           smartzones: JsonData.data,
-//        })
- 
-//     })
-//  })

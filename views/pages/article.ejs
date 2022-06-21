@@ -1,22 +1,41 @@
-<%- include('../includes/headarticle.ejs') %> 
-<%- include('../includes/head2.ejs') %> 
-
-    <main id="main-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/article.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>proof of concept</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img class="logo"  src="../images/logo.svg" alt="logo-HvA">
+            <p class="fdnd"> Frontend<br>Design & Development</p>
+        </section>
+    </header>
+    <hr>
+    <main id="published-container">
         <section class="article-contianer">
             <article>
-                <span class="name" ><%- data.name %>  </span>
+               <p><span class="name" ><%- data.name %>  </span></p>
                <p> <span class="published-date">Jun15 </span></p>
-
-                <h3><%- data.town %> </h3>
+                <h2><%- data.town %> </h2>
                 <img class="publish-image" src="<%- data.image %> " alt="ocean">
                 <p class="publish-paragraph"> <%- data.description %> </p>
             </article>
         </section>
-
-    
-
     </main>
-    <%- include('../includes/foot.ejs') %> 
+    <footer>
+    </footer>
+    <hr class="bar">
+
+   
+</body>
+</html>
+   
 
 
 

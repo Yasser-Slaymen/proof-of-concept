@@ -50,6 +50,7 @@ body>header>section{
     height: 150px;
     margin: 0 1.8em;
     color: var(--white);
+    object-fit:unset;
     
 }
 
@@ -192,6 +193,8 @@ img{
    width: 37vw;
     height: 25vh;
     margin: .5em 0 .5em 0;
+    object-fit: cover;
+    object-position: center;
     border-radius: 1em;
 }
 /* Aside */
@@ -240,6 +243,8 @@ img{
 .aside-imge{
     width: 9vw;
     height: 10vh;
+    object-fit: cover;
+    object-position: center;
     border-radius: 0;
 }
 h6{
