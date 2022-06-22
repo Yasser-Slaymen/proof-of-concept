@@ -259,17 +259,6 @@ h6{
     
 }
 
-/* POST Page */
-
-#form__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80vw;
-    border-radius: var(--radius);
-    background-color: var(--green);
-}
-
 /* Footer */
 footer{
     display: flex;

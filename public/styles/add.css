@@ -1,0 +1,9 @@
+/* POST Page */
+
+#form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    background-color: var(--green);
+}
