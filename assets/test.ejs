@@ -1,3 +1,6 @@
+const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
+
+
 <section class="contianer">
     
     <article>
@@ -35,3 +38,52 @@
             <a href="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></a>
             <% }) %> </button>
         </section> -->
+
+
+        <!-- Post form html -->
+        
+    <!-- form section -->
+    <section id="form__container">
+   
+        <h1>Voeg informatie toe</h1>
+ 
+        <form   class="form__post" action="/add"  method="post">
+ 
+            <div>
+ 
+                <label for="postId">postId</label>
+                <input type="number" name="postId"  id="postId-y">
+ 
+             </div>
+ 
+            <div>
+ 
+               <label for="author">author</label>
+               <input type="text" name="author" id="author-y">
+ 
+            </div>
+ 
+            <div>
+                <label for="title">title</label>
+                <input type="text" name="title" id="title-y">
+            </div>
+ 
+            <div>
+                <label for="content">content</label>
+                <input type="text" name="content" id="content-y">
+            </div>
+ 
+            <div>
+                <label for="published">published</label>
+                <input type="number" name="published" id="published-y">
+             </div> 
+            <section class="form__button">
+               <button class="btn--cancel"><a href="/">Backe</a></button>
+               <button class="btn--add" type="submit" value="submit">Send</button>
+            </section>
+        
+         </form>
+ 
+    </section>
+ 
+        

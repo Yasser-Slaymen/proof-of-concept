@@ -22,7 +22,7 @@
         <select  onChange="window.location.href=this.value">
             <option value="/">Read by author's name</option>
             <% smartzones.forEach((smartzone) => { %>
-              <option value="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></option>
+              <option  value="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></option>
             <% }) %>
         </select>
     </section>

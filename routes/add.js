@@ -12,16 +12,14 @@ router.post('/add', urlencodedParser,(request,response) => {
         headers:  {'Content-Type': 'application/json'}
     }
     fetchJson(BasUrl, postData).then(() =>{
-        response.render('pages/add',{
-            title:'add new article',
-        })
+        response.render('pages/add.ejs')
+        // console.log(postData)
+
     })
     
 })
 router.get('/add',(request,response) =>{
-    response.render('pages/add',{
-        title:'add new article',
-    })
+    response.render('pages/add')
 })
 
 async function fetchJson(url, postData = {}){

@@ -1,7 +1,7 @@
 <%- include('../includes/head.ejs') %> 
 <main id="main-container">
         <section class="contianer">
-            <% smartzones.filter((smartzone) => smartzone.name === 'Manoukk').map(smartzone =>{%>
+            <% smartzones.filter((smartzone) => smartzone.name === 'Yx').map(smartzone =>{%>
         
             <article>
                         
@@ -23,7 +23,7 @@
                 <% smartzones.forEach((smartzone) => {%> 
                     <a href="/article/<%- smartzone.smartzoneId %>">
                         <article class="aside-content" >
-                                    <h6><%- smartzone.name %></h6>
+                                    <h6 ><%- smartzone.name %></h6>
                                     <img class="aside-imge" src="<%- smartzone.image %>" alt="ocean">
                                     <p class="aside-parph">
                                     <%- smartzone.description %>  
