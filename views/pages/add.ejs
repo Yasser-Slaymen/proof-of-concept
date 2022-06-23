@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/add.css">
+    <link rel="stylesheet" href="../styles/article.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>proof of concept</title>
 </head>
@@ -23,7 +24,7 @@
     <!-- form section -->
     <section id="form__container">
    
-        <h1>Voeg informatie toe</h1>
+        <h1>Writing article</h1>
  
         <form   class="form__post" action="/add"  method="post">
             <section class="post-aside">
@@ -37,8 +38,8 @@
                 <label for="stad">title</label>
                 <input type="text" name="town" id="stad-y">
      
-                <label for="foto">Foto</label>
-                <input type="text" name="image" id="foto-y">
+                <label for="foto">image</label>
+                <input type="text" name="image" id="foto-y" placeholder="https:/.......">
      
                 <label for="functie">date</label>
                 <input type="date" name="function" id="functie-y" min="2015-01-01">
@@ -88,10 +89,8 @@
  
 </main>
 <footer>
-    <a href="/" class="backPage">Backe to Blog's</a>
+    <a href="/" class="post-backPage">Backe to Blog's</a>
 </footer>
-<hr class="bar">
-
 
 </body>
 </html>

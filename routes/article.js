@@ -4,7 +4,7 @@ const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch
 const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
 
 router.get('/article/:smartzoneId', (request, response) => {
-    fetchJson(`${BasUrl}/${request.params.smartzoneId}`).then((jsonData) => {
+    fetchJson(`${BasUrl}/${request.params.smartzoneId}`).then( function (jsonData){
       // console.log(jsonData)
       response.render('pages/article', {
         title: 'Voorbeeld titel',

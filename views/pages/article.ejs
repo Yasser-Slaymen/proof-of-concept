@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/article.css">
+    <link rel="stylesheet" href="../styles/add.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>proof of concept</title>
 </head>
@@ -16,7 +17,7 @@
             <p class="fdnd"> Frontend<br>Design & Development</p>
         </section>
     </header>
-    <h1>Think before you speak. Read before you think</h1>
+    <h1 class="h1-aricle">Read before you think</h1>
     <hr>
     <!-- main -->
     <main id="published-container">
@@ -24,7 +25,7 @@
             <article>
                <h2 class="puablished-title"><%- data.town %> </h2>
                <p class="published-author"><span class="name" ><%- data.name %>  </span></p>
-               <p class="published-date"> <span class="date">Jun15 </span></p>
+               <p class="published-date"> <span class="date"><%- data.function %>  </span></p>
                 <img class="publish-image" src="<%- data.image %> " alt="ocean">
                 <p class="publish-paragraph"> <%- data.description %> </p>
             </article>

@@ -1,7 +1,7 @@
 /* POST Page */
 
 #form__container{
-    width: 80vw;
+    width: 70vw;
     background-color: var(--green);
 }
 .form__post{
@@ -13,7 +13,8 @@
     width:20vw;
     height: 57vh;
     padding: 1em;
-    border: .1em solid black;
+    border: none;
+    /* border: .1em solid black; */
 }
 label{
     margin-top: .5em;
@@ -37,7 +38,8 @@ input{
     align-items: center;
     width: 57vw;
     height: 57vh;
-    border: .1em solid black;
+    border: none;
+    /* border: .1em solid black; */
 }
 #omschrijving-y{
     font-size: 1em;
@@ -74,3 +76,35 @@ input{
     color: var(--white);
     background-color: var(--purple);
 }
+/* .post-backPage{
+    position:fixed;
+    top: 32em;
+    right: 1em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.4em 1.5em;
+    color:var(--blue) ;
+    background-color:var(--green);
+    border-radius:var(--pilled);
+    font-size:1em; 
+} */
+
+.post-backPage:hover{
+  color: var(--white);
+  background-color: var(--purple);
+}
+.post-backPage{
+position:fixed;
+top: 34em;
+right: .8em;
+font-size: 1em;
+font-family: 'Open Sans', sans-serif;
+border-radius: var(--pilled);
+transform-origin: 50%;
+color: var(--white);
+border: 1px solid var(--white);
+margin: 0.2rem;
+padding: 0.6rem 1.2rem;
+font-weight: 400;
+text-decoration: none;
+}
+

@@ -41,7 +41,7 @@ hr{
     max-width: 80vw;
     height: 148vh;
 }
-h1{
+.h1-aricle{
     text-align: center;
     margin-bottom: .5em;
     color: var(--green);
@@ -104,7 +104,7 @@ h1{
     width: .1em;
     
   }
-.backPage{
+/* .backPage{
     position:fixed;
     top: 32em;
     right: 1em;
@@ -114,7 +114,25 @@ h1{
     background-color:var(--green);
     border-radius:var(--pilled);
     font-size:1em; 
-}
+} */
+.backPage{
+    position:fixed;
+    top: 32em;
+    right: .8em;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: var(--pilled);
+    transform-origin: 50%;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    margin: 0.2rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    
+    }
+    
 
 .backPage:hover{
     color: var(--white);
