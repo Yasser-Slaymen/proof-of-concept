@@ -1,9 +1,76 @@
 /* POST Page */
 
 #form__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 80vw;
     background-color: var(--green);
+}
+.form__post{
+    display: flex;
+}
+.post-aside{
+    display: flex;
+    flex-direction: column;
+    width:20vw;
+    height: 57vh;
+    padding: 1em;
+    border: .1em solid black;
+}
+label{
+    margin-top: .5em;
+}
+
+input{
+    outline: none;
+    height: 1.2em;
+    background-color:transparent;
+    border: none;
+    color: var(--blue);
+    border-bottom: 1px solid black;
+}
+.post-textarea h3 {
+    margin: .5em;
+    text-align: center;
+}
+.post-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 57vw;
+    height: 57vh;
+    border: .1em solid black;
+}
+#omschrijving-y{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 1em;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(211, 205, 205);
+    transition: all 0.2s;
+    outline: none;
+}
+#omschrijving-y:hover{
+    cursor: pointer;
+    background-color: #eee ;
+}
+#omschrijving-y:focus{
+    cursor: text;
+    color: var(--blue);
+}
+
+
+.btn--add{
+    font-family: 'Open Sans', sans-serif;
+    margin: 1em;
+    padding: 0.4em 1.5em;
+    color:var(--green) ;
+    background-color:var(--blue);
+    border-radius:var(--pilled);
+    font-size:1em; 
+}
+
+.btn--add:hover{
+    color: var(--white);
+    background-color: var(--purple);
 }

@@ -361,4 +361,21 @@ footer h2 {
    .time{
     color: var(--white);
    }
+   /* btn Backe to blogs */
+
+.backPage{
+    position:fixed;
+    top: 32em;
+    right: 1em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.4em 1.5em;
+    color:var(--blue) ;
+    background-color:var(--green);
+    border-radius:var(--pilled);
+    font-size:1em; 
+}
+.backPage:hover{
+    color: var(--white);
+    background-color: var(--purple);
+}
 

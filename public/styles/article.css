@@ -43,6 +43,7 @@ hr{
 }
 h1{
     text-align: center;
+    margin-bottom: .5em;
     color: var(--green);
 }
 
@@ -105,14 +106,14 @@ h1{
   }
 .backPage{
     position:fixed;
-    top: 24em;
+    top: 32em;
     right: 1em;
     font-family: 'Open Sans', sans-serif;
-    padding: 0.4em 2.5em;
+    padding: 0.4em 1.5em;
     color:var(--blue) ;
     background-color:var(--green);
     border-radius:var(--pilled);
-    font-size: 1.5rem; 
+    font-size:1em; 
 }
 
 .backPage:hover{
