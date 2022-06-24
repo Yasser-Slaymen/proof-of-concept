@@ -378,4 +378,27 @@ footer h2 {
     color: var(--white);
     background-color: var(--purple);
 }
+/* loading ui */
+.spinner-wrapper{
+    position: absolute;
+    top: 0;
+    left:-11em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000;
+    width: 77vw;
+    height: 100vh;
+    z-index: 999999;
+}
+#counter{
+    color:white;
+    font-size: 40px;
+
+}
+#hr{
+    width: 10%;
+    margin-left: 0;
+}
 
