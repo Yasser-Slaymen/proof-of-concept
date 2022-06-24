@@ -382,23 +382,58 @@ footer h2 {
 .spinner-wrapper{
     position: absolute;
     top: 0;
-    left:-11em;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #000;
-    width: 77vw;
+    left: 0;
+    width: 71vw;
     height: 100vh;
-    z-index: 999999;
+    margin: 0;
+    background-color: black;
+    z-index: 9999;
 }
-#counter{
-    color:white;
-    font-size: 40px;
+.loding_spinner{
+    width: 100px;
+    height: 100px;
+    border-width: 4px;
+    border-color: #fff;
+    border-style: solid dotted solid dotted;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 99999;
+    animation: rotate-rig 1s linear infinite;
+}
+.loding_spinner::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-width: 4px;
+    border-color: #009688;
+    border-style: solid dotted solid dotted;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: rotate-left 1s infinite;
 
 }
-#hr{
-    width: 10%;
-    margin-left: 0;
+@keyframes rotate-rig {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(1turn);
+    }
 }
-
+@keyframes rotate-left {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-1turn);
+    }
+}
