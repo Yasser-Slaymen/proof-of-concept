@@ -382,7 +382,7 @@ footer h2 {
 .spinner-wrapper{
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     width: 71vw;
     height: 100vh;
     margin: 0;
@@ -436,4 +436,8 @@ footer h2 {
     to {
         transform: rotate(-1turn);
     }
+}
+
+.loader{
+    display: none;
 }
