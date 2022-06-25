@@ -1,6 +1,6 @@
 # Proof of Concept
  Blog website met alle artikelen maken, een systeem waar alle Weekly Nerd artikelen in kunnen worden bewaard en doorzocht.
- ![Screenshot (58)](https://user-images.githubusercontent.com/90189815/175749775-c467aa64-0af8-4686-a026-f6b2465fbcc0.png)
+ ![Screenshot (59)](https://user-images.githubusercontent.com/90189815/175749995-2dd0a621-421b-4eae-9482-cb9e53b0d459.png)
 ## Inhoudsopgave
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
