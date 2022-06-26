@@ -441,3 +441,31 @@ footer h2 {
 .loader{
     display: none;
 }
+
+/* Erorr stats */
+.erorrStats{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left:0;
+    width: 71vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    z-index: 9999;
+}
+
+.erorrStats img {
+    width: 37em;
+    height: 39em;
+}
+.erorrStats h1 {
+    position: absolute;
+    top: 67%;
+    left: 22%;
+    color: var(--white);
+    margin: 0;
+}
