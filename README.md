@@ -1,14 +1,7 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Proof of Concept
+ Blog website met alle artikelen maken, een systeem waar alle Weekly Nerd artikelen in kunnen worden bewaard en doorzocht.
+ ![Screenshot (59)](https://user-images.githubusercontent.com/90189815/175749995-2dd0a621-421b-4eae-9482-cb9e53b0d459.png)
 ## Inhoudsopgave
-
-  
-
-
-
-
-
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
   * [Gebruik](#gebruik)
@@ -32,7 +25,6 @@
  
 
 ### ‼️ Dependencies
- * [🧦 Socket.io](https://www.npmjs.com/package/socket.io)
  * [🐰 Nodemon](https://www.npmjs.com/package/nodemon)
  * [🏡 Ejs](https://www.npmjs.com/package/ejs)
  * [📱 Body-Parser](https://www.npmjs.com/package/body-parser)
