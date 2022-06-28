@@ -63,10 +63,6 @@ jsfiles.forEach(filejs => {
 		const code = data.toString()
 		const result = postcss.minify(code)
 		fs.writeFile(outputPath, result.code, () => true)
-	})
-
-
-
-    
+	}) 
 })
 
