@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.mini.css">
+    <link rel="stylesheet" href="../styles/add.css">
+    <link rel="stylesheet" href="../styles/article.mini.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>proof of concept</title>
+</head>
+<body>
+<header>
+    <section>
+        <img class="logo"  src="../images/logo.svg" alt="logo-HvA">
+        <p class="fdnd"> Frontend<br>Design & Development</p>
+    </section>
+    
+</header>
+<main id="add-container">
+    
+
+    <!-- form section -->
+    <section id="form__container">
+   
+        <h1>Writing article</h1>
+ 
+        <form   class="form__post" action="/delete"  method="post">
+            <section class="post-aside">
+                <h3>Article information</h3>
+                <label for="postid">BlogId</label>
+                <input type="number" name="postId"  id="postid">
+<!--     
+                <label for="author">author</label>
+                <input type="text" name="author" id="author">
+
+                <label for="title">title</label>
+                <input type="text" name="title" id="title">
+     
+                <label for="image">image</label>
+                <input type="text" name="image" id="image" placeholder="https:/.......">
+     
+                <label for="published">date</label>
+                <input type="date" name="published" id="published" min="2015-01-01"> -->
+
+                <div class="post-textarea">
+                    <!-- <h3>Tell your story</h3> -->
+                    <!-- <textarea name="content" id="content"  placeholder="Start writing" cols="100" rows="100" ></textarea> -->
+                    <button class="btn--add" type="submit" value="submit">Delete</button>
+                </div>
+              
+
+            </section>
+ 
+<!--            
+            <div class="post-textarea">
+                <h3>Tell your story</h3>
+                <textarea name="content" id="content"  placeholder="Start writing" cols="100" rows="100" ></textarea>
+                <button class="btn--add" type="submit" value="submit">Delete</button>
+            </div>
+           -->
+         </form>
+ 
+    </section>
+ 
+ 
+</main>
+<footer>
+    <a href="/" class="post-backPage">Backe to Blog's</a>
+</footer>
+
+</body>
+</html>
