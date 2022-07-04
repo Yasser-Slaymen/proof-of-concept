@@ -1,7 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
+// const BasUrl = 'https://codingthecurbs.api.fdnd.nl/v1/smartzone'
+const BasUrl = 'https://blog.api.fdnd.nl/v1/post'
+
 
 router.get('/', (request, response) => {
    fetchJson(BasUrl).then((JsonData) =>{

@@ -23,12 +23,14 @@
         <h1>Stay curious</h1>
         <p>Discover stories, thinking, and expertise from writers on any topic</p>
         <a class="btn-writing" href="/add">Start writing</a>
+
         <select  onChange="window.location.href=this.value">
             <option value="/">Read by author's name</option>
             <% smartzones.forEach((smartzone) => { %>
-              <option  value="/article/<%- smartzone.smartzoneId %>"><%- smartzone.name %></option>
+              <option  value="/article/<%- smartzone.postId %>"><%- smartzone.author %></option>
             <% }) %>
         </select>
+
     </section>
    
     <section class="serch_articl">
