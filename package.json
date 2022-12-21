@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js",
+    "dev": "nodemon main.js",
     "minify": "node minify.js"
   },
   "repository": {
