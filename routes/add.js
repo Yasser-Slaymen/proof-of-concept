@@ -15,7 +15,6 @@ router.post('/add', urlencodedParser,(request,response) => {
     }
     fetchJson(BasUrl, postData).then(() =>{
         response.render('pages/add.ejs')
-        // console.log(postData)
 
     })
     
